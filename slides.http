@@ -1,0 +1,16 @@
+###
+# Create new slides (Requires authentication token)
+POST http://localhost:8000/api/slides
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZmZThjMzQ0MWJmOTcwNmMxOWY5NWQiLCJpYXQiOjE3MTEyNzEwMjcsImV4cCI6MTcxMTI3NDYyN30._aaAM8JXeUz7KzoxoIhkLLLNxXmb0r2Bi6ndNHxhaDQ
+
+{
+  "title": "Presentation Title",
+  "content": [],
+  "recording": []
+}
+
+###
+# Get all slides (Requires authentication token)
+GET http://localhost:8000/api/slides
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZmZThjMzQ0MWJmOTcwNmMxOWY5NWQiLCJpYXQiOjE3MTEyNzEwMjcsImV4cCI6MTcxMTI3NDYyN30._aaAM8JXeUz7KzoxoIhkLLLNxXmb0r2Bi6ndNHxhaDQ
